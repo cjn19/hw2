@@ -108,7 +108,9 @@ movie_new["year_released"] = 2012
 movie_new["rated"] = "PG-13"
 movie_new["studio_id"] = warner_bros.id
 movie_new.save
+# TODO!
 
+# Insert data into the database that reflects the sample data shown above.
 Actor.destroy_all
 
 actor=Actor.new
@@ -182,9 +184,6 @@ Role.create(movie_id: the_dark_knight_rises.id, actor_id: gary_oldman.id, charac
 Role.create(movie_id: the_dark_knight_rises.id, actor_id: tom_hardy.id, character_name: "Bane")
 Role.create(movie_id: the_dark_knight_rises.id, actor_id: joseph_gordon_levitt.id, character_name: "John Blake")
 Role.create(movie_id: the_dark_knight_rises.id, actor_id: anne_hathaway.id, character_name: "Selina Kyle")
-# TODO!
-
-# Insert data into the database that reflects the sample data shown above.
 # Do not use hard-coded foreign key IDs.
 # TODO!
 
