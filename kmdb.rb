@@ -209,17 +209,12 @@ puts "Top Cast"
 puts "========"
 puts ""
 
-puts ""
-puts "Top Cast"
-puts "========"
-puts ""
-
 roles = Role.all
 
 for ro in roles
     movies = Movie.find_by(id: ro.movie_id)
     actors = Actor.find_by(id: ro.actor_id)
-    puts "#{movies.title}  #{actors.name}  #{ro.chracter_name}" 
+    puts "#{movies.title}  #{actors.name}  #{ro.character_name}" 
 end
 
 # Query the cast data and loop through the results to display the cast output for each movie.
