@@ -194,9 +194,9 @@ puts ""
 
 movies = Movie.all
 
-for mo in movies
-    studio = Studio.find_by(id: mo.studio_id)
-    puts "#{mo.title} #{mo.year_released} #{mo.rated} #{studio["name"]}"
+for mov in movies
+    studio = Studio.find_by(id: mov.studio_id)
+    puts "#{mov.title} #{mov.year_released} #{mov.rated} #{studio["name"]}"
 end
 
 # Query the movies data and loop through the results to display the movies output.
@@ -210,10 +210,10 @@ puts ""
 
 roles = Role.all
 
-for ro in roles
-    movies = Movie.find_by(id: ro.movie_id)
-    actors = Actor.find_by(id: ro.actor_id)
-    puts "#{movies.title}  #{actors.name}  #{ro.character_name}" 
+for rol in roles
+    movies = Movie.find_by(id: rol.movie_id)
+    actors = Actor.find_by(id: rol.actor_id)
+    puts "#{movies.title}  #{actors.name}  #{rol.character_name}" 
 end
 
 # Query the cast data and loop through the results to display the cast output for each movie.
